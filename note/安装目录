@@ -1,0 +1,28 @@
+
+go 语言版本1.8
+
+ GOROOT=/usr/local/go     #GO语言的安装目录  
+ GOPATH=/Users/yuxuefeng/github/go/golearn:Users/yuxuefeng/github/go/goweb #go 的工作目录
+
+工作区和GOPATH
+
+一般情况，go源码文件都需要存放到工作区中
+
+但是命令源码文档 不是必须的
+
+
+每个工作区的目录结构都类似：
+
+src/    用于存放源码 以代码包为组织形式
+
+pkg/     用于存放归档文件（名称以.a为后缀的文件）
+
+bin/ 用于存放当前工作区中的GO程序的可执行文件 
+
+当环境变量GOBIN设置生效时，该目录没有意义
+
+当GOPATH的值中包含多个工作区的路径是，必须设置GOBIN，否则无法成功安装GO程序的可执行文件
+
+
+
+两个隐藏的go语言环境变量 GOOS  操作系统 GOARCH计算架构

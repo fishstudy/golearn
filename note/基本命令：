@@ -1,0 +1,6 @@
+基本命令：
+获取当前go语言版本
+go version  注意 不是 --version
+go build 用于编译测试
+go clean 用于删除当前源码包里编译生成的文件
+go fmt 格式化写好的代码文件
