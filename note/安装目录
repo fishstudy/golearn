@@ -1,8 +1,12 @@
 
 go 语言版本1.8
 
- GOROOT=/usr/local/go     #GO语言的安装目录  
- GOPATH=/Users/yuxuefeng/github/go/golearn:Users/yuxuefeng/github/go/goweb #go 的工作目录
+ GOROOT=/usr/local/go     
+    #GO语言的安装目录  
+ GOPATH=/Users/yuxuefeng/github/go/golearn:Users/yuxuefeng/github/go/goweb 
+    #go 的工作目录 可设置多个
+ GOBIN 
+    #编译存放路径。不允许设置多个路径 可以为空。为空时则遵循“约定优于配置”原则，可执行文件放在各自GOPATH目录的bin文件夹中
 
 工作区和GOPATH
 
@@ -26,3 +30,6 @@ bin/ 用于存放当前工作区中的GO程序的可执行文件
 
 
 两个隐藏的go语言环境变量 GOOS  操作系统 GOARCH计算架构
+ 
+特别注意
+   如同配置文件修改了 要执行一下 ource ~/.bash_profile 修改才能生效

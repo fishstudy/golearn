@@ -4,3 +4,6 @@ go version  注意 不是 --version
 go build 用于编译测试
 go clean 用于删除当前源码包里编译生成的文件
 go fmt 格式化写好的代码文件
+go get  获取一个远程包的工具
+go install 编译包，同时复制结果到$GOPATH/bin，$GOPATH/pkg等对应目录下
+go env 查看go的环境变量
